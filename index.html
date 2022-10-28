@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora 3D&T</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form action = '' onchange="updateInputValue();">
+      <label for="custoBase">Custo base:</label>
+      <input type="number" id="custoBase" name="custoBase" value="0"  pattern ="[0-9]"
+      onchange="updateInputValue();" onmouseout="updateInputValue();"
+      min="0"><br>
+
+      <input type="checkbox" id="checkExtrema" name="checkExtrema">
+      <label class="label" for="checkExtrema"> Magia Extrema</label><br>
+
+      <input type="checkbox" id="checkElementalista" name="checkElementalista">
+      <label for="checkElementalista"> Elementalista</label><br>
+
+      <input type="checkbox" id="checkShu" name="checkShu">
+      <label for="checkShu"> Shu</label><br>
+
+      <input type="checkbox" id="checkAlcance" name="checkAlcance">
+      <label for="checkAlcance"> Metamagia: Alcance Ampliado</label><br><br>
+
+    </form>
+    
+    <p id= "custoFinal" style="font-size:150%; color: rgb(215, 226, 251);" >
+      Custo Final: 0
+    </p>
+  </body>
+    <script src="script.js"></script>
+
+</html>
